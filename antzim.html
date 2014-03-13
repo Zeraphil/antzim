@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>AntSim demo</title>
+		<style>
+			canvas {
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				background: transparent;
+			}
+			#background { z-index: -4;}
+			#trails_T { z-index: -3;}
+			#trails_F { z-index: -2;}
+			#world { z-index: -1;}
+			#ants {z-index: 0;}
+		</style>
+	</head>
+	<body>
+		<!-- The canvas for the background -->
+		<canvas id="background" width="400" height="400">
+			Your browser does not support canvas. Please try again with a different browser.
+		</canvas>
+		<canvas id="trails_T" width="400" height="400">
+			<!-- Canvas for world patches -->
+		</canvas>
+		<canvas id="trails_F" width="400" height="400">
+			<!-- Canvas for world patches -->
+		</canvas>
+		<canvas id="world" width="400" height="400">
+			<!-- Canvas for world patches -->
+		</canvas>
+		<canvas id="ants" width="400" height="400">
+			<!--The canvas for all ants. -->
+		</canvas>
+		<script src="antzim.js"></script>
+	</body>
+</html>
